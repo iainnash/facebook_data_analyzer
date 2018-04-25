@@ -11,6 +11,8 @@ Analyze facebook copy of your data. Download zip file from facebook and get info
 **Remember you need to use english language(US) on facebook for download**
 
  It won't work if you use different language because of date formatting, different titles on pages. This script uses `nokogiri` internally to parse data.
+ 
+ 
 
 1. Go to settings on facebook and switch to english language(US), you can later go back to your native langauge.
 2. From facebook settings, request copy of your data
@@ -23,6 +25,7 @@ Analyze facebook copy of your data. Download zip file from facebook and get info
 9. Run `ruby analyze_facebook_data.rb path_to_catalog_with_copy_of_facebook_data` in my case this command looked like: `ruby analyze_facebook_data.rb /Users/przemyslawmroczek/Downloads/facebook-przemekmroczek90/`
 10. You will see the script running and analyzing your conversations. At the end you will see it generated new excel file `facebook_analysis.xlsx`
 
+
 # What's inside
 
 * Ranking of friends by messages (number of messages sent, who sent more, how many words, characters in conversation)
@@ -32,7 +35,5 @@ Analyze facebook copy of your data. Download zip file from facebook and get info
 * How your history of making friends looked like? Breaked down by month, year, weekend vs. working day,
 
 ** Enjoy! **
-
-
 
 # Sorry for code quality, it was proof of concept. It will be refactored in the future.
